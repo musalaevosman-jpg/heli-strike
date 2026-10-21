@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heli Strike: San Andreas RC Arcade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="arcade-wrapper">
+    <!-- Верхняя панель со счётом и жизнями -->
+    <div class="hud">
+      <div class="hud-item">СЧЁТ: <span id="score">0</span></div>
+      <div class="hud-item">РЕКОРД: <span id="highScore">0</span></div>
+      <div class="hud-item">ПРОЧНОСТЬ: <span id="hp">100%</span></div>
+    </div>
+
+    <!-- Игровой холст -->
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+    <!-- Экран старта / Game Over -->
+    <div id="uiOverlay" class="overlay">
+      <h1 id="overlayTitle">HELI STRIKE</h1>
+      <p id="overlaySub">GTA RC-MISSION VIBES</p>
+      <div class="controls-info">
+        <p>🎮 <b>W, A, S, D</b> или <b>Стрелочки</b> — Полёт</p>
+        <p>🔥 <b>ПРОБЕЛ</b> или <b>Клик мыши</b> — Огонь</p>
+      </div>
+      <button id="startBtn">НАЧАТЬ МИССИЮ</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
